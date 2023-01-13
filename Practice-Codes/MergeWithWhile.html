@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,37 @@
     <title>Document</title>
 </head>
 <script>
-    let arrayOne = [2,43,42,2,1];
-    let arrayTwo = [34,32,21,1,4];
-
+    let arrayOne = [1, 2, 3, 4, 5];
+    let arrayTwo = [6, 7, 8, 9];
     let arrayThree = [];
+    let d1 = 0;
+    let d2 = 0;
+    let d3 = 0;
 
-    
+    while (d1 < arrayOne.length && d2 < arrayTwo.length) {
+        if (arrayOne[d1] < arrayTwo[d1]) {
+            arrayThree[d3] = arrayOne[d1];
+            d1++
+        } else {
+            arrayThree[d3] = arrayTwo[d2];
+            d2++
+        }
+        d3++
+    }
+    while (d1 < arrayOne.length) {
+        arrayThree[d3] = arrayOne[d1];
+        d1++
+        d3++
+    }
+    console.log(arrayThree);
+
+
+
+
 </script>
+
 <body>
-    
+
 </body>
+
 </html>
