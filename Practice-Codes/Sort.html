@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <script>
+        let unSorted = [4,3,2,1];
+
+        let elm = [];
+
+        for (let i = 0; i < unSorted.length; i++) {
+            console.warn(i);
+            for (let j = 0; j < unSorted.length; j++) {
+                if(unSorted[j]>unSorted[j+1]){
+                    let temp = unSorted[j];
+                    unSorted[j] = unSorted[j+1];
+                    unSorted[j+1] = temp;
+                }
+            }
+            
+        }
+        console.log(unSorted);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
